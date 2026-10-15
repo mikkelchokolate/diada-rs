@@ -1,0 +1,19 @@
+[package]
+name = "diada-rs"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Rust implementation of the DiADA mechanism analysis program"
+
+[dependencies]
+diada-compat = { path = "../diada-compat" }
+diada-core = { path = "../diada-core" }
+diada-io = { path = "../diada-io" }
+eframe = { version = "=0.36.2", default-features = false, features = ["default_fonts", "glow", "x11", "wayland"] }
+rfd = "=0.17.2"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+png = "=0.18.1"
+
+[lints.rust]
+unsafe_code = "forbid"

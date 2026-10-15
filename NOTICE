@@ -1,0 +1,16 @@
+diada-rs
+--------
+Rust implementation of DiADA by the 2026 reconstruction contributors.
+The reconstruction code is licensed under MIT; see LICENSE.
+
+Original DiADA
+--------------
+Copyright (c) 1996-1999 N.V. Umnov, TMM, Bauman Moscow State Technical
+University (MGTU). This project is an unofficial implementation and is not
+affiliated with the original authors or MGTU. Original program binaries
+and Borland compilers are not included.
+
+Numerical compatibility
+-----------------------
+Adapted Bochs numerical code retains its notices and conditions in
+rust/crates/diada-compat/BOCHS-NUMERIC-NOTICE.txt and the source headers.

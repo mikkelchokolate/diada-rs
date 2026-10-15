@@ -1,0 +1,23 @@
+# Measured TP7.1 StoreReal; byte order: original little-endian memory.
+# id extended_hex real_hex_or_runtime_error
+# AUTO and 87=N matched for every case. See store-provenance.md.
+one 0000000000000080ff3f 810000000000
+negative-one 0000000000000080ffbf 810000000080
+half-exact 0000800000000080ff3f 810100000000
+negative-half-exact 0000800000000080ffbf 810100000080
+half-below ffff7f0000000080ff3f 810000000000
+negative-half-below ffff7f0000000080ffbf 810000000080
+half-above 0100800000000080ff3f 810100000000
+negative-half-above 0100800000000080ffbf 810100000080
+carry-to-two 000080ffffffffffff3f 820000000000
+negative-carry-to-two 000080ffffffffffffbf 820000000080
+min-real 00000000000000807f3f 010000000000
+negative-min-real 00000000000000807fbf 010000000080
+below-min ffffffffffffffff7e3f 000000000000
+negative-below-min ffffffffffffffff7ebf 000000000000
+above-min 01000000000000807f3f 010000000000
+max-real 000000ffffffffff7d40 ffffffffff7f
+negative-max-real 000000ffffffffff7dc0 ffffffffffff
+before-overflow-half ffff7fffffffffff7d40 ffffffffff7f
+HALFOV 000080ffffffffff7d40 error:205
+EXPOV 00000000000000807e40 error:205
